@@ -27,7 +27,7 @@ billgen.addEventListener("click", () => {
     let totalbill = document.getElementById("totalbill");
     let billno = document.getElementById("billno");
 
-    if (isNaN(billinp) || isNaN(tipinp) || isNaN(noinp) || noinp <= 0) {
+    if (!(billinp) || !(tipinp) || !(noinp) || noinp <= 0) {
         alert("Please enter valid inputs.");
         return;
     }
