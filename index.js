@@ -7,10 +7,10 @@ tbtn.forEach((btn) => {
             b.style.backgroundColor = "";
         });
         btn.style.backgroundColor = "rgb(16, 141, 16)";
-
+        btn.style.border = "rgb(16, 141, 16)";
 
         let tipValue = parseInt(btn.textContent.replace('%', ''));
-        tipInput.value = tipValue;  
+        tipInput.value = tipValue;
 
     });
 
@@ -36,14 +36,13 @@ billgen.addEventListener("click", () => {
     let total = tipamt + billinp;
     let perPerson = total / noinp;
 
-    
+
     tipamount.textContent = tipamt.toFixed(2);
     totalbill.textContent = total.toFixed(2);
     billno.textContent = perPerson.toFixed(2);
 
-          tbtn.forEach((b) => {
+    tbtn.forEach((b) => {
         b.style.backgroundColor = "";
     });
 
-  
 });
